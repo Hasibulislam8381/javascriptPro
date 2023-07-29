@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1 id="change-click">Button does not clicked</h1>
+		<p id="student-form">Student form</p>
+		<input id="input" type="text" /> <button id="submit">submit</button
+		><br /><br />
+
+		<button onclick="myButton()">click</button>
+		<button id="eventListener">click2</button>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam nisi
+			harum sequi, eaque aliquam unde pariatur esse voluptatem voluptatum culpa
+			totam consectetur consequuntur, libero possimus omnis, molestias iusto
+			aspernatur nihil ducimus reprehenderit! Ipsam saepe magni nisi expedita
+			adipisci dicta, ab, similique, quibusdam commodi quae libero nobis
+			deserunt veritatis asperiores!
+		</p>
+		<p>
+			Autem veniam repellat ipsum at aliquam beatae aut deleniti modi sunt,
+			magni blanditiis, harum, doloremque maiores accusantium. Inventore
+			quibusdam illum dignissimos similique nostrum sit laudantium aperiam
+			laborum, voluptas temporibus consequatur distinctio eligendi culpa ut
+			veritatis ea. Dolorum, doloremque, hic quod possimus modi dolores illum
+			repudiandae itaque ullam sunt autem quisquam?
+		</p>
+		<p>
+			Velit suscipit aliquam, dicta harum in corporis ducimus ipsa sequi minus
+			molestias, vero enim amet reiciendis ipsam consequatur repellat neque quia
+			eaque blanditiis fugit architecto! Aliquam repudiandae nesciunt aspernatur
+			officiis, nulla dolorem veritatis pariatur quibusdam quis! Praesentium
+			dolore quos quidem deserunt, voluptates illum eligendi illo aliquam,
+			repudiandae vero dicta beatae?
+		</p>
+		<form action="">
+			<textarea name="" id="comment" cols="60" rows="5"></textarea><br />
+			<button id="btn-post">Post</button>
+		</form>
+
+		<script src="js/evenListener.js"></script>
+
+		<script>
+			document
+				.getElementById("btn-post")
+				.addEventListener("click", function () {
+					console.log(document.getElementById("comment").value);
+				});
+		</script>
+	</body>
+</html>
