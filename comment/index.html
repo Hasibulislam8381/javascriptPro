@@ -6,7 +6,7 @@
 		<title>Add comment</title>
 	</head>
 	<body>
-		<div id="comment-container">
+		<div style="color: blue" id="comment-container">
 			<!-- all the comment will be here -->
 			All Comment <br /><br />
 		</div>
@@ -17,12 +17,12 @@
 
 		<script>
 			document.getElementById("my-post").addEventListener("click", function () {
-				const newComment = document.getElementById("new-comment");
-				const newComment2 = newComment.value;
-				const allComment = document.getElementById("comment-container");
-				const p = document.createElement("p");
+				var newComment = document.getElementById("new-comment");
+				newComment2 = newComment.value;
+				var container = document.getElementById("comment-container");
+				var p = document.createElement("p");
 				p.innerText = newComment2;
-				allComment.appendChild(p);
+				container.appendChild(p);
 				newComment.value = "";
 			});
 		</script>

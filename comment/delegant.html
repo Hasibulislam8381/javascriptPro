@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Event Delegate</title>
+	</head>
+	<body>
+		<h1>Explore event Delegate</h1>
+		<section>
+			<ul id="list-container">
+				<li class="item">Lorem, ipsum dolor.</li>
+				<li class="item">Laboriosam, beatae culpa.</li>
+				<li class="item">Rerum, animi ipsam.</li>
+				<li class="item">Eveniet, adipisci fuga!</li>
+				<li class="item">Cum, explicabo laudantium!</li>
+				<li class="item">Impedit, adipisci enim.</li>
+			</ul>
+			<button id="add-btn">Add Item</button>
+			<script>
+				// const items = document.getElementsByClassName("item");
+				// for (const item of items) {
+				// 	item.addEventListener("click", function (event) {
+				// 		console.log(event.target.parentNode.removeChild(event.target));
+				// 	});
+				// }
+				document
+					.getElementById("list-container")
+					.addEventListener("click", function (event) {
+						event.target.parentNode.removeChild(event.target);
+					});
+				const button = document
+					.getElementById("add-btn")
+					.addEventListener("click", function () {
+						const mainCon = document.getElementById("list-container");
+						const li = document.createElement("li");
+						li.innerText = "li element added";
+						li.classList.add("item");
+						mainCon.appendChild(li);
+					});
+			</script>
+		</section>
+	</body>
+</html>
