@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<main>
+			<section class="mt-12">
+				<div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+					<div class="bg-neutral-700 text-white p-8 rounded-xl">
+						<h1 class="text-3xl">Product 1</h1>
+						<h2 class="text-5xl">$<span id="product">120</span></h2>
+						<input
+							class="p-1 mt-3 rounded-sm"
+							type="text"
+							name=""
+							placeholder="Apply cuppon"
+							id="apply-cupon"
+						/>
+						<input
+							type="submit"
+							class="bg-neutral-300 p-2 rounded cursor-pointer text-amber-900"
+							name=""
+							value="Apply"
+							id="apply"
+						/>
+						<br />
+						<button class="bg-sky-600 p-2 rounded mt-2">Buy Now</button>
+					</div>
+					<div class="bg-neutral-700 text-white p-8 rounded-xl">
+						<h1 class="text-3xl">Product 2</h1>
+						<h2 class="text-5xl">$ <span id="total-withdraw">200</span></h2>
+					</div>
+					<div class="bg-neutral-700 text-white p-8 rounded-xl">
+						<h1 class="text-3xl">Product 3</h1>
+						<h2 class="text-5xl">$ <span id="balance">345</span></h2>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/discount.js"></script>
+	</body>
+</html>
